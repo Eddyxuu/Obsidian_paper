@@ -1,3 +1,4 @@
+# Diffusion Models: A Comprehensive Survey of Methods and Applications
 ### Main foundations of diffusion models
 1.DDPMS[97,188,247]
 2.SMS[252,253]
