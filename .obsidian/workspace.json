@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a3d06c37755d0a90",
+        "id": "341f1876f3dd05b1",
         "type": "tabs",
         "children": [
           {
-            "id": "4148ea6c86e407fc",
+            "id": "b15476df8588a250",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -157,11 +157,12 @@
   "active": "94178309a589590c",
   "lastOpenFiles": [
     "未命名.md",
+    "README.md",
+    "conflict-files-obsidian-git.md",
     "wfwfw.md",
     "gittest.md",
     "tset.md",
     "test.md",
-    "README.md",
     "1.md"
   ]
 }
