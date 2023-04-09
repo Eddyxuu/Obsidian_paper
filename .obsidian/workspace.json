@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gittest.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gittest.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "gittest.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "gittest.md"
+                "file": "README.md"
               }
             }
           },
@@ -156,8 +156,12 @@
   },
   "active": "94178309a589590c",
   "lastOpenFiles": [
-    "1.md",
+    "未命名.md",
+    "wfwfw.md",
     "gittest.md",
-    "README.md"
+    "tset.md",
+    "test.md",
+    "README.md",
+    "1.md"
   ]
 }
