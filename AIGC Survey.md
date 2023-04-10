@@ -5,4 +5,4 @@
 3.Score SDES[251,257]
 
 ## DDPMs
-[97.247]
+[97.247] two Markov chains: 1 is perturbs data to noise(hand-designed), 2 is noise back to data(deep neural networks)
