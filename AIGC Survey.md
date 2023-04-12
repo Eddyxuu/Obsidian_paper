@@ -9,7 +9,7 @@
 
 重参数化
 
-$q(x_t|x_{t-1} = \mathcal N(x_t;$
+$q(X_t|X_{t-1} = \mathcal N(X_t;\sqrt{1-\beta_t}X_{t-1},\beta_tI)$  逐步加噪
 
 
 
