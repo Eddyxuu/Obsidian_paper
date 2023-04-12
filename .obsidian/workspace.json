@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b54b21c8f11cd081",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ITELS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c9ca9bb53bba12bd",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "ITELS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "ITELS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AIGC Survey.md"
+                "file": "ITELS.md"
               }
             }
           }
@@ -147,10 +159,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "245971134ffca690",
+  "active": "b54b21c8f11cd081",
   "lastOpenFiles": [
-    "README.md",
     "AIGC Survey.md",
+    "ITELS.md",
+    "README.md",
     "conflict-files-obsidian-git.md",
     "1.txt"
   ]
