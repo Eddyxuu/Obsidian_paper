@@ -9,7 +9,11 @@ Arctic, Antarctic, Oceania
 ### 形容天气
 mild, heating, warm, thermal, arid, moist, damp, humid,
 ### 雪
-snowy, frost, hail, thaw, chill, freeze, frigid,
+snowy, stormy, frost, hail, thaw, chill, freeze, frigid,
+### 雨
+sprinkle, shower, downpour,
+### 山
+mount, peak, 
 ### 恶化行为
 deteriorate, aggravate, degrade, erode,
 ## 海
@@ -25,3 +29,5 @@ shallow, superficial,
 flat, rough, smooth, sandy, stony, steep, parallel, narrow,
 ### 学科
 meteorology
+# 专业
+El Nino, Celsius,

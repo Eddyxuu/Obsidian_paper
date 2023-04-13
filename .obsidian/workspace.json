@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ITELS.md",
+                "file": "AIGC Survey.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ITELS.md",
+                "file": "AIGC Survey.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ITELS.md",
+                "file": "AIGC Survey.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ITELS.md"
+                "file": "AIGC Survey.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "b54b21c8f11cd081",
   "lastOpenFiles": [
-    "AIGC Survey.md",
     "ITELS.md",
+    "AIGC Survey.md",
     "README.md",
     "conflict-files-obsidian-git.md",
     "1.txt"
