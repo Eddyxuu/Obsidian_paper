@@ -15,6 +15,7 @@ $q(X_t|X_{t-1} = \mathcal N(X_t;\sqrt{1-\beta_t}X_{t-1},\beta_tI)$  逐步加噪
 
 去噪过程
 $\log\mathcal p_\theta(\mathcal x_0) = \log\int{\mathcal p_\theta(\mathcal x_0,\mathcal x_1,...,\mathcal x_T)d\mathcal x_1d\mathcal x_2...d\mathcal x_T}$ 求p(x0)即使求x0的边缘概率（边缘分布），对x1...xT元素进行积分的目的是剔除他们的影响。
+$\int\mathcal p_{\theta(x,y)}dxdy = 1$
 这个公式表示的是条件概率密度函数 $\log\mathcal p_\theta(\mathcal x_0)$ 与一个积分的对数之间的关系。让我们仔细看看这个等式的每一部分。
 
 左边的部分是以 $\theta$ 为参数的概率密度函数 $\mathcal p_\theta(\mathcal x_0)$ 的对数。这里，$\mathcal x_0$ 代表一个变量，而 $\theta$ 代表概率密度函数的参数。通常，$\log\mathcal p_\theta(\mathcal x_0)$ 表示我们对于变量 $\mathcal x_0$ 在给定参数 $\theta$ 下的不确定性的度量。
