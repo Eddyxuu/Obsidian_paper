@@ -40,4 +40,6 @@ p(x) = ∫ p(x, y) dy
 $E_{q(x_{1:T}|x_0)}[\frac{p_\theta(x_{0:T})}{q(x_{1:T}|x_0)}]$
 $E_{q(x_{1:T}|x_0)}[\frac{p_\theta(x_{0:T})}{q(x_{1:T}|x_0)}] = ∑ [\frac{p_\theta(x_{0:T})}{q(x_{1:T}|x_0)} * q(x_{1:T}|x_0)]$
 $E_{q(x_{1:T}|x_0)}[\frac{p_\theta(x_{0:T})}{q(x_{1:T}|x_0)}] = ∫ [\frac{p_\theta(x_{0:T})}{q(x_{1:T}|x_0)} * q(x_{1:T}|x_0)] dx_{1:T}$
-wei
+
+
+− E𝑞(x0,x1,··· ,x𝑇 ) [log 𝑝𝜃 (x0, x1, · · · , x𝑇 )]
