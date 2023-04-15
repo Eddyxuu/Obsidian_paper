@@ -43,3 +43,5 @@ $E_{q(x_{1:T}|x_0)}[\frac{p_\theta(x_{0:T})}{q(x_{1:T}|x_0)}] = ∫ [\frac{p_\th
 
 
 − E𝑞(x0,x1,··· ,x𝑇 ) [log 𝑝𝜃 (x0, x1, · · · , x𝑇 )]
+
+$log p_\theta(x_0,x_1,...,x_T) = log p(x_T)+\sum_{t=1}^{T}log\frac{p_\theta(x_{t-1}|x_t)}{q(x_t|x_{t-1})}$
