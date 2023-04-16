@@ -48,3 +48,7 @@ $log p_\theta(x_0,x_1,...,x_T) = log p(x_T)+\sum_{t=1}^{T}log\frac{p_\theta(x_{t
 
 $KL(q(x_0,x_1,...x_T)||p\theta(x_0,x_1,...x_T))$
 $E_{q(x_0,x_1,...,x_T)}[-log p(x_T)-\sum_{t=1}^{T}log\frac{p_\theta(x_{t-1}|x_t)}{q(x_t|x_{t-1})}]$
+
+
+$x_0$~$q(x_0)$
+$q(x_t|x_{t-1})=\mathcal N(x_t;\sqrt{1-\beta_t}x_{t-1},\beta_tI)$
