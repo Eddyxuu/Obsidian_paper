@@ -50,7 +50,9 @@ $KL(q(x_0,x_1,...x_T)||p\theta(x_0,x_1,...x_T))$
 $E_{q(x_0,x_1,...,x_T)}[-log p(x_T)-\sum_{t=1}^{T}log\frac{p_\theta(x_{t-1}|x_t)}{q(x_t|x_{t-1})}]$
 
 
-$x_0$~$q(x_0)$
-1.$q(x_t|x_{t-1})=\mathcal N(x_t;\sqrt{1-\beta_t}x_{t-1},\beta_tI)$
+加噪模型：$x_t = x_{t-1}*\alpha+\beta I$  人为定义的
+$\alpha$是衰减系数，$\beta$是噪声系数，均为（0，1）之间
+
+1.$q(x_t|x_{t-1})=\mathcal N(x_t;\sqrt{1-\beta_t}x_{t-1},\beta_tI)$ 人为定义的
 2.$q(x_t|x_0)=\mathcal N(x_t;\sqrt{\alpha_t}x_0,(1-\alpha_t)I)$
-由于
+由于概率遵守马尔可夫链，所以在知道初始状态x0的情况下，可以直接推出xT的分布，且已知了$q(x_t|x_{t-1})$的情况下即知道了每步加噪过程，从x0进行t次叠加就可得出$q(x_t|x_0)$
