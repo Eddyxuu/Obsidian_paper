@@ -51,4 +51,6 @@ $E_{q(x_0,x_1,...,x_T)}[-log p(x_T)-\sum_{t=1}^{T}log\frac{p_\theta(x_{t-1}|x_t)
 
 
 $x_0$~$q(x_0)$
-$q(x_t|x_{t-1})=\mathcal N(x_t;\sqrt{1-\beta_t}x_{t-1},\beta_tI)$
+1.$q(x_t|x_{t-1})=\mathcal N(x_t;\sqrt{1-\beta_t}x_{t-1},\beta_tI)$
+2.$q(x_t|x_0)=\mathcal N(x_t;\sqrt{\alpha_t}x_0,(1-\alpha_t)I)$
+由于
