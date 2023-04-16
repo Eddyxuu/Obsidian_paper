@@ -49,6 +49,8 @@ $log p_\theta(x_0,x_1,...,x_T) = log p(x_T)+\sum_{t=1}^{T}log\frac{p_\theta(x_{t
 $KL(q(x_0,x_1,...x_T)||p\theta(x_0,x_1,...x_T))$
 $E_{q(x_0,x_1,...,x_T)}[-log p(x_T)-\sum_{t=1}^{T}log\frac{p_\theta(x_{t-1}|x_t)}{q(x_t|x_{t-1})}]$
 
+加噪过程
+整一个加噪过程是一个后验估计，被表示为$q(x_{1:T}|x_0)=\prod_{t=1}^{T}q(x_t|x_{t-1})$
 
 加噪模型：$x_t = x_{t-1}*\alpha+\beta I$  人为定义的
 $\alpha$是衰减系数，$\beta$是噪声系数，均为（0，1）之间
