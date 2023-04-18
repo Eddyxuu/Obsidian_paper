@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "9a32314b004072ff",
+    "id": "3369b060e2e92298",
     "type": "split",
     "children": [
       {
-        "id": "167d3a5b10afd119",
+        "id": "341f1876f3dd05b1",
         "type": "tabs",
         "children": [
           {
-            "id": "b54b21c8f11cd081",
+            "id": "0ac1de9c090f442d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "82148cede1833043",
+    "id": "a9208230b1637594",
     "type": "split",
     "children": [
       {
-        "id": "24d37a27d1025717",
+        "id": "88726bc36507f6c9",
         "type": "tabs",
         "children": [
           {
-            "id": "6a29862c579671ac",
+            "id": "94178309a589590c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "61684439526ee69b",
+            "id": "00a2df80397661ca",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "1c08bdffc1ab4747",
+            "id": "1984bcd94af39a06",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -69,18 +69,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "c9ca9bb53bba12bd",
+    "id": "aac5a59dc0097627",
     "type": "split",
     "children": [
       {
-        "id": "b158c8a49012866c",
+        "id": "1ea3663e10616d65",
         "type": "tabs",
         "children": [
           {
-            "id": "7ab98a61044a78b9",
+            "id": "081c78b2ce125587",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -97,7 +98,7 @@
             }
           },
           {
-            "id": "66e3d89431929b46",
+            "id": "8eeea5ade4c365b3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -109,7 +110,7 @@
             }
           },
           {
-            "id": "6b0d1b7aca4c2284",
+            "id": "e4370de10941d9c6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,7 +121,7 @@
             }
           },
           {
-            "id": "9f8a7104bdb04912",
+            "id": "d70885b291996a7c",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -128,12 +129,21 @@
                 "file": "AIGC Survey.md"
               }
             }
+          },
+          {
+            "id": "7dec77ace3c9d57b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -146,12 +156,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b54b21c8f11cd081",
+  "active": "0ac1de9c090f442d",
   "lastOpenFiles": [
-    "ITELS.md",
-    "AIGC Survey.md",
-    "README.md",
     "conflict-files-obsidian-git.md",
-    "1.txt"
+    "AIGC Survey.md",
+    "ITELS.md",
+    "README.md",
+    "wfwfw.md",
+    "gittest.md",
+    "tset.md",
+    "test.md",
+    "1.md"
   ]
 }
