@@ -64,3 +64,6 @@ KL散度作为理论分析，对为什么能生成高质量样本进行了解释
 损失函数作用于预测值与真实值实际的差距，优化模型参数以生成高质量的结果，损失函数选择的均方差与交叉熵等由实际情况而定。
 
 $E_{t \sim \mathcal U[[1,T]],x_0 \sim q(x_0), \epsilon \sim \mathcal N(0,I)}[\lambda(t)||\epsilon_\theta(x_t,t)||^2]$
+
+
+## Diffusion 快速采样
