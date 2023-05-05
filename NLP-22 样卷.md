@@ -32,3 +32,19 @@ In summary, the Viterbi algorithm is computationally efficient compared to a na√
 3.  Word suffixes and prefixes: The suffixes and prefixes of a word can provide hints about its grammatical role. For example, words ending in "-ing" are often verbs, while words ending in "-ly" are often adverbs. Including features that represent common prefixes and suffixes can help the CRF model recognize such patterns.
     
 4.  Capitalization: The capitalization of a word can be informative for POS tagging. Proper nouns are typically capitalized, whereas other nouns, verbs, adjectives, etc., are usually not capitalized unless they appear at the beginning of a sentence. Including a feature that captures the capitalization information can help the CRF model distinguish between proper nouns and other POS tags.
+
+## Q3
+#### b)
+To deal with negation appropriately in a bag-of-words representation, you can use a simple preprocessing method called "negation scope marking." This method involves modifying words that appear in the scope of negation, so that the negation effect is captured by the bag-of-words model. Here's a step-by-step outline of the method:
+
+1. Identify negation words: Create a list of common negation words, such as "not", "isn't", "aren't", "doesn't", "don't", "won't", "never", etc. You can also include domain-specific negation words if needed.
+
+2. Tokenize the sentences: Split each sentence in the dataset into individual words or tokens.
+
+3. Mark negation scope: Iterate through the tokens in each sentence. When you encounter a negation word, mark the scope of negation, which typically includes the words that follow the negation word up to the next punctuation mark or end of the sentence. You can also consider using a fixed window size, for example, marking the next N words after the negation word.
+
+4. Modify words in the negation scope: For each word in the negation scope, prepend a prefix like "NOT_" to the word. This will create new tokens that represent the negated meaning of the original words, e.g., "not fast" will be represented as "NOT_fast" and "not good" as "NOT_good".
+
+5. Create the bag-of-words representation: After preprocessing the sentences with the above method, create the bag-of-words representation for the modified sentences.
+
+By using this negation scope marking method, you can capture the effect of negation in the bag-of-words model. This will allow the model to differentiate between the original words and their negated counterparts, incorporating the relevant sentiment signals in the dataset.

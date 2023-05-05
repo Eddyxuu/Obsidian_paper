@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "226db5c77099cc4b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "b35b05e93058ec74",
             "type": "leaf",
             "state": {
@@ -38,7 +30,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,8 +176,8 @@
   },
   "active": "c2be68839720f084",
   "lastOpenFiles": [
-    "AIGC Survey.md",
     "NLP-22 样卷.md",
+    "AIGC Survey.md",
     "conflict-files-obsidian-git.md",
     "ITELS.md",
     "README.md",
