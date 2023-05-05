@@ -14,8 +14,31 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "b35b05e93058ec74",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.7"
+              }
+            }
+          },
+          {
+            "id": "c2be68839720f084",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NLP-22 样卷.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,6 +83,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "d8b9f0af1c2786f0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -81,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "NLP-22 样卷.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "NLP-22 样卷.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AIGC Survey.md"
+                "file": "NLP-22 样卷.md"
               }
             }
           },
@@ -151,8 +182,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "94178309a589590c",
+  "active": "c2be68839720f084",
   "lastOpenFiles": [
+    "NLP-22 样卷.md",
     "conflict-files-obsidian-git.md",
     "AIGC Survey.md",
     "ITELS.md",
