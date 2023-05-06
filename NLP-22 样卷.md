@@ -31,6 +31,10 @@ $P(fly|V) = \frac {300}{20000}$
     
 4.  Capitalization: The capitalization of a word can be informative for POS tagging. Proper nouns are typically capitalized, whereas other nouns, verbs, adjectives, etc., are usually not capitalized unless they appear at the beginning of a sentence. Including a feature that captures the capitalization information can help the CRF model distinguish between proper nouns and other POS tags.
 ## Q2
+#### a)what is lexical semantics, what is distibution semantics
+Lexical semantics is the study of meaning associated with individual words or phrases in a language. It involves understanding the relationships between words, such as synonyms, antonyms, hyponyms, and meronyms, as well as the way in which words can have multiple senses or meanings (polysemy). Lexical semantics often relies on resources like dictionaries, thesauri, and other structured knowledge bases to provide human-readable definitions and relationships between words.
+
+Distributional semantics, on the other hand, is based on the idea that the meaning of a word can be inferred from its usage patterns and co-occurrence with other words in a large text corpus. It operates under the hypothesis that words that frequently appear in similar contexts tend to have similar meanings. Distributional semantics often involves the use of computational models and algorithms, such as word embeddings (e.g., Word2Vec, GloVe), which represent words as high-dimensional vectors in a continuous space. These vector representations can be used to measure the semantic similarity between words and even capture semantic relationships like analogies.
 #### a)Compared with traditional lexical semantics (e.g., dictionary- based semantics), what are the advantages and disadvantages of distributional semantics?
 Advantages of distributional semantics over traditional lexical semantics:
 
@@ -140,3 +144,136 @@ Accuracy is not a good metric for evaluating classifier performance on imbalance
 To identify as many positive sentences as possible from an unseen test dataset, you should focus on the classifier with a higher recall. Recall (or sensitivity) measures the proportion of actual positive instances that are correctly identified by the classifier. A higher recall means the classifier can identify a larger fraction of positive instances in the dataset.
 
 When comparing the precision-recall curves of c1 and c2, c2 is the better. This indicates a higher recall rate at different levels of precision, which means the classifier can better identify positive instances while maintaining a reasonable level of precision.
+
+## 21-Q1
+#### a)Describe what TF-IDF is. Explain how it can be used to measure the importance of a word to a document from a given corpus.描述TF-IDF是什么。解释如何使用它来衡量给定语料库中某个单词对文档的重要性。
+TF-IDF stands for Term Frequency-Inverse Document Frequency. It is a numerical statistic used to measure the importance of a word in a document relative to a given corpus. TF-IDF reflects the significance of a term in a document by considering both its frequency within that document and its rarity across the entire collection of documents.
+
+The TF-IDF score is calculated by multiplying two components:
+
+1. Term Frequency (TF): This measures the frequency of a word in a document. It is calculated as the number of times a word appears in a document divided by the total number of words in that document. A higher term frequency indicates that the word is more common in the document.
+
+   Formula: `TF(t, d) = (Number of times term t appears in document d) / (Total number of terms in document d)`
+
+2. Inverse Document Frequency (IDF): This measures the rarity of a word across the entire corpus. It is calculated as the logarithm of the total number of documents in the corpus divided by the number of documents containing the word. A higher inverse document frequency indicates that the word is rare and potentially more informative.
+
+   Formula: `IDF(t, D) = log (Total number of documents in corpus D) / (Number of documents containing term t)`
+
+TF-IDF score for a word in a document:
+
+`TF-IDF(t, d, D) = TF(t, d) * IDF(t, D)`
+
+The TF-IDF score is used to measure the importance of a word to a document within a corpus. A higher TF-IDF score indicates that the word is more important, as it is frequent in the document but rare in the entire collection of documents. This helps to identify keywords or key phrases that are specific to a document and differentiate it from other documents in the corpus.
+
+In applications like information retrieval, text classification, and document clustering, TF-IDF is a useful feature for representing documents as numerical vectors. These vectors can be used to calculate the similarity between documents, rank documents based on relevance to a query, or group similar documents together.
+
+#### c)In an information retrieval system, we can use TF-IDF to measure the relevance between a query and a document. Describe a way to compute the relevance scores using TF-IDF.在信息检索系统中，我们可以使用TF-IDF来度量查询与文档之间的相关性。描述一种使用TF-IDF计算相关分数的方法。
+In an information retrieval system, we can use the cosine similarity measure in conjunction with TF-IDF to compute the relevance scores between a query and a document. Cosine similarity measures the cosine of the angle between two vectors, in this case, the query and document vectors represented using TF-IDF weights.
+
+Here's a step-by-step approach to compute the relevance scores using TF-IDF:
+
+1. Preprocess the query and the documents: Tokenize the query and the documents, remove stopwords, and apply stemming or lemmatization, if necessary.
+
+2. Calculate the TF-IDF weights for each term in the query and the documents. For the query, you can use the same IDF values calculated from the document corpus.
+
+3. Represent the query and each document as vectors using their respective TF-IDF weights. Each dimension in the vector corresponds to a unique term in the corpus, and the value at that dimension is the TF-IDF weight of that term in the query or document.
+
+4. Compute the cosine similarity between the query vector and each document vector. The cosine similarity can be calculated using the following formula:
+
+   `cosine_similarity(Q, D) = (Q • D) / (||Q|| * ||D||)`
+
+   where Q is the query vector, D is the document vector, and ||Q|| and ||D|| represent the Euclidean norms (magnitudes) of the vectors.
+
+5. Rank the documents based on their cosine similarity scores with the query. A higher cosine similarity score indicates a higher relevance between the query and the document.
+
+In summary, the relevance scores between a query and a document can be calculated using cosine similarity, which takes into account the TF-IDF weights of terms in both the query and documents. This approach captures the importance of terms in both the query and the documents, while also considering the rarity of terms in the corpus.
+在信息检索系统中，我们可以结合TF-IDF使用余弦相似性度量来计算查询和文档之间的相关性分数。余弦相似度度量两个向量之间夹角的余弦值，在本例中，使用TF-IDF权重表示的查询和文档向量。
+
+以下是使用TF-IDF逐步计算相关性分数的方法:
+
+预处理查询和文档:标记查询和文档，删除停止词，必要时应用词干或词序化。
+
+计算查询和文档中每个词的TF-IDF权重。对于查询，可以使用从文档语料库计算的相同IDF值。
+
+使用各自的TF-IDF权重将查询和每个文档表示为向量。向量中的每个维度对应于语料库中的一个唯一术语，该维度上的值是查询或文档中该术语的TF-IDF权重。
+
+计算查询向量和每个文档向量之间的余弦相似度。余弦相似度的计算公式如下:
+
+cosine_similarity (Q, D) = (Q•D) /(| |Q| | * | | D | |)
+
+其中Q为查询向量，D为文档向量，||Q||和||D||表示向量的欧几里得范数(幅度)。
+
+根据文档与查询的余弦相似度评分对文档进行排序。余弦相似度分数越高，表示查询和文档之间的相关性越高。
+
+总之，查询和文档之间的相关性分数可以使用余弦相似度来计算，它考虑了查询和文档中术语的TF-IDF权重。这种方法捕捉了术语在查询和文档中的重要性，同时也考虑了语料库中术语的稀缺性。
+#### d)Imagine there exists a large set of news articles, and you want to group the articles by their topics. For example, you wish to organize articles related to politics into one group, and articles related to technology into another group. Which machine learning algorithm should be appropriate for the task? Outline how you would use the algorithm to group the articles by their topics.假设存在大量的新闻文章，您希望按主题对这些文章进行分组。例如，您希望将与政治相关的文章组织到一个组中，将与技术相关的文章组织到另一个组中。哪个机器学习算法适合这个任务?概述如何使用该算法按主题对文章进行分组。
+An appropriate machine learning algorithm for grouping news articles by their topics is unsupervised learning, specifically clustering algorithms such as K-means or Latent Dirichlet Allocation (LDA). In this example, we will outline how to use LDA to group the articles by their topics.
+
+LDA is a generative probabilistic model for collections of discrete data, such as text corpora. It is particularly useful for topic modeling, where the goal is to discover the hidden thematic structure in a collection of documents.
+
+Steps to use LDA for grouping articles by their topics:
+
+1. Preprocessing: Clean and preprocess the text data from the news articles. This may include tokenization, lowercasing, stopword removal, stemming or lemmatization, and removal of special characters or numbers.
+
+2. Feature extraction: Convert the preprocessed text data into a suitable format for the LDA algorithm. One common approach is to use the Bag-of-Words (BoW) representation, where each document is represented as a vector of word frequencies. Alternatively, you can use the TF-IDF representation, which accounts for the importance of terms in the documents and the entire corpus.
+
+3. LDA model training: Determine the number of topics (k) that you expect to discover in the corpus. This can be based on domain knowledge or using techniques like coherence scores to find an optimal number of topics. Train the LDA model on the preprocessed data with the specified number of topics. The LDA model will learn the topic-word distribution and the document-topic distribution.
+
+4. Assign topics to articles: For each article, use the LDA model to infer the topic distribution. Assign the most probable topic to the article. This can be done by selecting the topic with the highest probability for each document.
+
+5. Evaluate and refine the model: Inspect the top keywords associated with each topic to ensure the topics are coherent and distinct. You can also use coherence scores to evaluate the quality of the topics. If needed, refine the model by adjusting the number of topics, preprocessing steps, or LDA model parameters.
+
+After following these steps, the news articles will be grouped by their most probable topics, allowing you to organize them based on their content.
+## 21-Q3
+#### a)What pre-processing techniques would you carry out on this sentence before doing part-of-speech tagging, and what pre-processing techniques would you not use? Justify your answer. Include examples of the expected result of the different pre-processing techniques considered when applied to this sentence.
+Assuming the sentence is: "The quick brown fox jumped over the lazy dog."
+
+Before performing part-of-speech (POS) tagging, it is advisable to apply the following pre-processing techniques:
+
+1. Tokenization: Split the sentence into individual words (tokens). This is an essential step for POS tagging, as it allows the algorithm to analyze each word separately.
+
+   Example: ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog"]
+
+2. Lowercasing: Convert all tokens to lowercase. This can help reduce data sparsity and ensure that words with the same meaning but different capitalization (e.g., "The" and "the") are treated as the same token by the POS tagger.
+
+   Example: ["the", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog"]
+
+Pre-processing techniques that you may NOT use before POS tagging:
+
+1. Stopword removal: Stopwords are common words like "the", "and", "is", etc., which may not carry much meaning on their own. While removing stopwords can be useful for tasks like text classification or topic modeling, it is not appropriate for POS tagging. Removing stopwords would alter the sentence structure, making it difficult for the POS tagger to accurately assign tags based on the original context.
+
+2. Stemming/Lemmatization: Stemming and lemmatization are techniques used to reduce words to their base or root form. For example, "jumped" might be reduced to "jump". Although these techniques can be useful in other NLP tasks to reduce data sparsity, they are not suitable for POS tagging. Reducing words to their base form can lead to loss of grammatical information, which is essential for accurate POS tagging. For instance, "jumped" (a past-tense verb) would be indistinguishable from "jump" (a base form or present-tense verb) after stemming or lemmatization.
+
+In summary, before performing POS tagging, it is recommended to apply tokenization and lowercasing as pre-processing techniques. However, stopword removal, stemming, and lemmatization should be avoided to preserve the original sentence structure and grammatical information for accurate POS tagging.
+
+#### b)Give at least 3 examples of possible NLP applications and discuss for each the advantages and disadvantages in carrying out automatic part-of-speech-tagging in the pre-processing pipeline
+1. Sentiment Analysis:
+   Advantages of POS tagging in sentiment analysis:
+   - POS tagging helps identify important word categories like adjectives, adverbs, and verbs, which are more likely to carry sentiment information.
+   - It can help filter out irrelevant words (e.g., conjunctions, determiners) that do not contribute significantly to sentiment.
+   - POS tagging can help in handling negation more accurately, as it helps identify the words that change the sentiment polarity.
+
+   Disadvantages of POS tagging in sentiment analysis:
+   - POS tagging may introduce errors in the pre-processing pipeline, affecting the overall sentiment analysis performance.
+   - It can increase the complexity and computation time of the pre-processing pipeline.
+
+2. Machine Translation:
+   Advantages of POS tagging in machine translation:
+   - POS tagging can help identify the grammatical roles of words in the source language, aiding in generating more accurate translations in the target language.
+   - It can help disambiguate words with multiple meanings based on their POS, leading to better translations.
+
+   Disadvantages of POS tagging in machine translation:
+   - Errors in POS tagging may lead to incorrect translations or misunderstandings in the target language.
+   - Increased complexity and computation time, especially when translating between languages with different grammar rules.
+
+3. Information Extraction (e.g., Named Entity Recognition, Relation Extraction):
+   Advantages of POS tagging in information extraction:
+   - POS tagging can help identify potential named entities (e.g., proper nouns) and their attributes (e.g., adjectives describing them).
+   - It can aid in filtering out irrelevant words or phrases, allowing the extraction algorithms to focus on relevant information.
+   - POS tagging can help in understanding the structure of sentences, which can be helpful for relation extraction tasks.
+
+   Disadvantages of POS tagging in information extraction:
+   - Incorrect POS tags may lead to missed or incorrect extraction of entities or relations.
+   - It may increase the complexity and computation time of the pre-processing pipeline.
+
+In conclusion, automatic part-of-speech tagging can offer valuable information for various NLP applications, such as sentiment analysis, machine translation, and information extraction. However, it may introduce errors, increase complexity, and computational time in the pre-processing pipeline. Deciding whether to use POS tagging in the pre-processing pipeline depends on the specific application and the trade-offs between accuracy and complexity.
