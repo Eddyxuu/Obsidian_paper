@@ -11,26 +11,15 @@
             "id": "b35b05e93058ec74",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.7"
-              }
-            }
-          },
-          {
-            "id": "c2be68839720f084",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP-22 样卷.md",
+                "file": "AIGC Survey.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP-22 样卷.md",
+                "file": "AIGC Survey.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP-22 样卷.md",
+                "file": "AIGC Survey.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP-22 样卷.md"
+                "file": "AIGC Survey.md"
               }
             }
           },
@@ -174,7 +163,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c2be68839720f084",
+  "active": "b35b05e93058ec74",
   "lastOpenFiles": [
     "NLP-22 样卷.md",
     "README.md",
