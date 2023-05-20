@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "aac5a59dc0097627",
@@ -156,10 +155,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0ac1de9c090f442d",
+  "active": "94178309a589590c",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "未命名.md",
     "AIGC Survey.md",
+    "未命名",
+    "conflict-files-obsidian-git.md",
     "ITELS.md",
     "README.md",
     "wfwfw.md",
