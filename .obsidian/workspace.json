@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "27b6b95a31bdb731",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +174,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b35b05e93058ec74",
+  "active": "27b6b95a31bdb731",
   "lastOpenFiles": [
     "NLP-22 样卷.md",
     "README.md",
