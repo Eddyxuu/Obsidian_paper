@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "Algorithm/FFT.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "Algorithm/FFT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "Algorithm/FFT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AIGC Survey.md"
+                "file": "Algorithm/FFT.md"
               }
             }
           },
@@ -165,11 +165,11 @@
   },
   "active": "b35b05e93058ec74",
   "lastOpenFiles": [
+    "AIGC Survey.md",
     "Algorithm/FFT.md",
     "Algorithm",
     "NLP-22 样卷.md",
     "README.md",
-    "AIGC Survey.md",
     "conflict-files-obsidian-git.md",
     "ITELS.md",
     "wfwfw.md",
