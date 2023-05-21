@@ -76,3 +76,7 @@ $X_t \~ N(\squr{\alpha})$
 2. Learning-Based Sampling 基于学习的抽样
 ### Learning-Free Sampling
 减少时间不长，最小化离散化误差
+
+
+
+image-to-image + 图像评分 + 路人情绪 + 开发商成本控制 + 新奇度打分
