@@ -66,6 +66,11 @@ KL散度作为理论分析，对为什么能生成高质量样本进行了解释
 $E_{t \sim \mathcal U[[1,T]],x_0 \sim q(x_0), \epsilon \sim \mathcal N(0,I)}[\lambda(t)||\epsilon_\theta(x_t,t)||^2]$
 
 
+
+### Diffusion 总结
+##### Diffusion 阶段
+$X_t \~ N(\squr{\alpha})$
+
 ## Diffusion 快速采样 Efficient Sampling
 1. Learning-Free Sampling 无学习抽样
 2. Learning-Based Sampling 基于学习的抽样

@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ba426bb2bb6b558e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "adf8bcd9d407eaca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a6c8f56eac736df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AIGC Survey.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AIGC Survey.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -155,12 +192,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "94178309a589590c",
+  "active": "8a6c8f56eac736df",
   "lastOpenFiles": [
-    "未命名.md",
-    "AIGC Survey.md",
-    "未命名",
+    "Algorithm/FFT.md",
     "conflict-files-obsidian-git.md",
+    "AIGC Survey.md",
+    "Algorithm",
+    "NLP-22 样卷.md",
     "ITELS.md",
     "README.md",
     "wfwfw.md",
