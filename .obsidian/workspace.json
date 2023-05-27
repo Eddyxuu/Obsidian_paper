@@ -35,9 +35,11 @@
             "id": "02b88b41396fd854",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.4"
+                "file": "AI生图竞品.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
