@@ -26,3 +26,8 @@ freeze原参数+新训练参数
 
 设计本身是解决问题
 增加出图分析
+
+zapier 自动化工作流
+Airchat APP AI社区
+HumanEval开源模型 -》 3小时训练轻量gpt， 识图
+亚马逊开发AI虚拟试穿
