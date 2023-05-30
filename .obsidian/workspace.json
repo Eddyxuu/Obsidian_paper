@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "70a413bd888831c5",
+        "id": "f18fb67c1dc87aae",
         "type": "tabs",
         "children": [
           {
-            "id": "e1587ce698f5dd45",
+            "id": "b35b05e93058ec74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b9ca3eabebff8a90",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,7 +32,19 @@
             }
           },
           {
-            "id": "ae4e44b385200a33",
+            "id": "02b88b41396fd854",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI生图竞品.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "020d071689ed03c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,8 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bd14bcd5a97a2ced",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -78,7 +115,7 @@
             }
           },
           {
-            "id": "cab11d31934072b5",
+            "id": "d8b9f0af1c2786f0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -89,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "aac5a59dc0097627",
@@ -106,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI生图竞品.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI生图竞品.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI生图竞品.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -163,7 +199,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -176,19 +212,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e1587ce698f5dd45",
+  "active": "bd14bcd5a97a2ced",
   "lastOpenFiles": [
     "Peter组会.md",
     "conflict-files-obsidian-git.md",
-    "AI生图竞品.md",
-    "Algorithm/FFT.md",
-    "AIGC Survey.md",
     "Image Processing.md",
+    "AI生图竞品.md",
+    "AIGC Survey.md",
+    "Algorithm/FFT.md",
     "noise_1.png",
-    "Pasted image 20230522192619.png",
-    "Algorithm",
     "NLP-22 样卷.md",
     "ITELS.md",
+    "AI生图竞品",
+    "Pasted image 20230522192619.png",
+    "Algorithm",
     "README.md",
     "wfwfw.md",
     "gittest.md",
