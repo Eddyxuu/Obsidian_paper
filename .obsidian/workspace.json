@@ -8,17 +8,91 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0ac1de9c090f442d",
+            "id": "4cb991335d9e8572",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
+                "file": "Algorithm/FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a4be33281bf94f20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ba177c931776027",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30afab9a7bacb851",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AIGC Survey.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "74f73f83d063b2af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Image Processing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1e479dfb112987b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/FFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "632eee9899ddfb90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -92,6 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +205,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "conflict-files-obsidian-git.md"
+              }
             }
           },
           {
@@ -157,11 +235,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0ac1de9c090f442d",
+  "active": "632eee9899ddfb90",
   "lastOpenFiles": [
-    "Algorithm/FFT.md",
-    "AIGC Survey.md",
     "conflict-files-obsidian-git.md",
+    "Algorithm/FFT.md",
+    "Image Processing.md",
+    "AIGC Survey.md",
+    "Pasted image 20230522192619.png",
     "Algorithm",
     "NLP-22 样卷.md",
     "ITELS.md",
