@@ -4,83 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "341f1876f3dd05b1",
+        "id": "70a413bd888831c5",
         "type": "tabs",
         "children": [
           {
-            "id": "4cb991335d9e8572",
+            "id": "e1587ce698f5dd45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/FFT.md",
+                "file": "AI生图竞品.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a4be33281bf94f20",
+            "id": "ae4e44b385200a33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/FFT.md",
+                "file": "Peter组会.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9ba177c931776027",
+            "id": "7033021d5f1a7bef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/FFT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "30afab9a7bacb851",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AIGC Survey.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "74f73f83d063b2af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Image Processing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e479dfb112987b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algorithm/FFT.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "aac5a59dc0097627",
@@ -154,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/FFT.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/FFT.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/FFT.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -211,7 +176,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 406.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,12 +189,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1e479dfb112987b9",
+  "active": "7033021d5f1a7bef",
   "lastOpenFiles": [
+    "Peter组会.md",
     "conflict-files-obsidian-git.md",
+    "AI生图竞品.md",
     "Algorithm/FFT.md",
-    "Image Processing.md",
     "AIGC Survey.md",
+    "Image Processing.md",
+    "noise_1.png",
     "Pasted image 20230522192619.png",
     "Algorithm",
     "NLP-22 样卷.md",
