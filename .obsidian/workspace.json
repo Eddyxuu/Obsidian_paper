@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI生图竞品.md",
+                "file": "Peter组会.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI生图竞品.md",
+                "file": "Peter组会.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI生图竞品.md",
+                "file": "Peter组会.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI生图竞品.md"
+                "file": "Peter组会.md"
               }
             }
           },
@@ -202,9 +202,9 @@
   },
   "active": "020d071689ed03c3",
   "lastOpenFiles": [
-    "Peter组会.md",
     "README.md",
     "AI生图竞品.md",
+    "Peter组会.md",
     "Pasted image 20230522192619.png",
     "AIGC Survey.md",
     "Image Processing.md",
