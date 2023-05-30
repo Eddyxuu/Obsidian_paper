@@ -41,4 +41,4 @@ ControlNet+ - canny edge prompt 图像修正 视觉   Scene Graph-to-Image Gener
 	CLIP
 	ControlNet
 #### 生成后
-	dragGAN 
+	dragGAN
