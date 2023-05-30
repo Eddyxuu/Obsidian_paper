@@ -32,3 +32,6 @@ Airchat APP AI社区
 HumanEval开源模型 -》 3小时训练轻量gpt， 识图
 亚马逊开发AI虚拟试穿
 CoT has also been applied to other areas like vision language question answering [257] and code generation [258].
+ 
+CLIP+ - text prompt 文字修正 语言
+ControlNet+ - canny edge prompt 图像修正 视觉   Scene Graph-to-Image Generation.

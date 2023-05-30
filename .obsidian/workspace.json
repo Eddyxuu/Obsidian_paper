@@ -30,21 +30,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "7033021d5f1a7bef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "AI生图竞品.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "AI生图竞品.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "AI生图竞品.md"
               }
             }
           },
@@ -189,7 +176,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7033021d5f1a7bef",
+  "active": "e1587ce698f5dd45",
   "lastOpenFiles": [
     "Peter组会.md",
     "conflict-files-obsidian-git.md",
