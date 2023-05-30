@@ -35,3 +35,10 @@ CoT has also been applied to other areas like vision language question answering
  
 CLIP+ - text prompt 文字修正 语言
 ControlNet+ - canny edge prompt 图像修正 视觉   Scene Graph-to-Image Generation.
+
+### 生成式图片可控方式
+#### 生成前
+	CLIP
+	ControlNet
+#### 生成后
+	dragGAN 
