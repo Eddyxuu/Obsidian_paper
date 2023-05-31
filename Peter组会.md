@@ -33,3 +33,5 @@ diffusion做概念演变 GAN做概念嵌入
 
 workflow
 preliminary analysis
+
+生成图像与现实尺度相关联 增加出图可行性 （像素-》现实）比例尺
