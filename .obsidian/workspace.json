@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Peter组会.md",
+                "file": "AI生图竞品.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Peter组会.md",
+                "file": "AI生图竞品.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Peter组会.md",
+                "file": "AI生图竞品.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Peter组会.md"
+                "file": "AI生图竞品.md"
               }
             }
           },
@@ -202,14 +202,14 @@
   },
   "active": "020d071689ed03c3",
   "lastOpenFiles": [
-    "README.md",
+    "Algorithm/FFT.md",
+    "AIGC Survey.md",
     "AI生图竞品.md",
     "Peter组会.md",
+    "README.md",
     "Pasted image 20230522192619.png",
-    "AIGC Survey.md",
     "Image Processing.md",
     "conflict-files-obsidian-git.md",
-    "Algorithm/FFT.md",
     "noise_1.png",
     "NLP-22 样卷.md",
     "ITELS.md",
