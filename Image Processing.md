@@ -51,3 +51,20 @@ The function developed in this project, named `colourMatrix(filename)`, takes an
 The development of this function involved several image processing techniques, including noise reduction, edge detection, contour finding, and color identification. The performance of the function was evaluated based on the accuracy of the color matches and the time taken to process an image.
 
 This report will detail the approach taken to develop the `colourMatrix(filename)` function, explain how it works, discuss the design decisions made during its development, and assess its performance. The report will also suggest potential improvements for the function and discuss any techniques that were learned about but not implemented due to time constraints.
+
+图像校正
+程序的第一步是图像校正，这对于为后续步骤准备图像至关重要。此过程由get_ccorrected_image(img)函数执行。该函数依次执行下列过程。
+
+降噪:该功能首先对输入图像应用双边滤波器进行降噪。双边滤波是一种非线性、边缘保持和降噪平滑滤波器。图像中每个像素的强度值由附近像素的强度值的加权平均值代替。至关重要的是，这个权重不仅取决于像素的欧几里得距离，还取决于辐射差异(例如，范围差异，如颜色强度，深度距离等)。这通过系统地循环每个像素并相应地调整相邻像素的权重来保持锐利的边缘。
+
+灰度转换:将图像转换为灰度。这是因为许多图像处理技术都适用于灰度图像，因为它们更容易处理(只有2个维度:宽度和高度)，而彩色图像有三个颜色通道。而因为该阶段只需要对4个黑色圆形进行识别，所以不需要采用rgb颜色通道。
+
+边缘检测:该函数然后对灰度图像应用Canny边缘检测。Canny方法通过寻找图像梯度的局部最大值来找到边缘。梯度是用高斯滤波器的导数来计算的。该方法使用两个阈值检测强边缘和弱边缘，只有当弱边缘与强边缘相连时，弱边缘才会被包含在输出中。因此，这种方法比其他方法更不容易被噪声欺骗，更容易检测到真正的弱边缘。
+
+轮廓检测:通过边缘检测，在图像中找到轮廓。等高线可以简单地解释为连接所有连续点(沿着边界)的曲线，具有相同的颜色或强度。轮廓是形状分析和目标检测与识别的有用工具。
+
+圆和四边形识别:该功能然后识别检测轮廓中的圆和四边形。这是通过将每个轮廓近似为多边形并检查多边形的顶点数量来完成的。设定如果一个多边形有超过6个顶点，它被认为是一个圆。如果一个多边形有4个顶点，它被认为是一个四边形。
+
+透视校正:最后，该函数应用透视变换来校正图像。这是通过定义一组变换的目标点，并根据图像中圆形的位置或最大四边形的顶点计算透视变换矩阵来完成的。然后，该函数使用计算矩阵对图像应用透视变换。
+
+此函数的输出是输入图像的更正版本，为图像处理管道中的下一步做好准备。
