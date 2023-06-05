@@ -52,6 +52,22 @@ The development of this function involved several image processing techniques, i
 
 This report will detail the approach taken to develop the `colourMatrix(filename)` function, explain how it works, discuss the design decisions made during its development, and assess its performance. The report will also suggest potential improvements for the function and discuss any techniques that were learned about but not implemented due to time constraints.
 
+
+**Methodology**
+
+The development of the `colourMatrix(filename)` function involved a series of image processing steps, each of which contributed to the overall task of identifying the color pattern in an image.
+
+1. **Image Correction**: The first step in the process was to correct the input image. This was achieved using the `get_ccorrected_image(img)` function, which applied bilateral filtering for noise reduction, converted the image to grayscale, applied Canny edge detection, and found contours in the image. The function then identified circles and quadrilaterals in the image, sorted the circles based on their x-coordinates, and applied a perspective transform to correct the image.
+    
+2. **Color Module Range Determination**: The next step was to determine the color module range in the corrected image. This was done using the `determine_colorModule_range(corrected_img)` function, which applied a median filter for further noise reduction, converted the image to RGB, applied Canny edge detection to each channel (R, G, B), combined the edges, and found contours in the combined edge image.
+    
+3. **Image Saturation Enhancement**: To improve the visibility of the colors in the image, the `image_enhanceSaturation(corrected_img)` function was used to enhance the saturation of the corrected image. This function applied a bilateral filter, converted the image to the HSV color space, increased the saturation channel values by a factor, and converted the modified HSV image back to the BGR color space.
+    
+4. **Color Module Detection**: The final step in the process was to detect the color modules in the enhanced image. This was done using the `detect_colorModule(contours, enhanced_img)` function, which approximated each contour to a polygon, cropped the region of interest (quadrilateral) from the image, converted it to RGB, and identified the color of each cell within the quadrilateral using a set of color detection rules.
+    
+
+The `colourMatrix(filename)` function integrated all these steps to process an image and return the recognized color pattern. The function was designed to handle images of varying complexity and did not assume a specific orientation for the images.
+
 图像校正
 程序的第一步是图像校正，这对于为后续步骤准备图像至关重要。此过程由get_ccorrected_image(img)函数执行。该函数依次执行下列过程。
 
@@ -61,10 +77,10 @@ This report will detail the approach taken to develop the `colourMatrix(filename
 
 边缘检测:该函数然后对灰度图像应用Canny边缘检测。Canny方法通过寻找图像梯度的局部最大值来找到边缘。梯度是用高斯滤波器的导数来计算的。该方法使用两个阈值检测强边缘和弱边缘，只有当弱边缘与强边缘相连时，弱边缘才会被包含在输出中。因此，这种方法比其他方法更不容易被噪声欺骗，更容易检测到真正的弱边缘。
 
-轮廓检测:通过边缘检测，在图像中找到轮廓。等高线可以简单地解释为连接所有连续点(沿着边界)的曲线，具有相同的颜色或强度。轮廓是形状分析和目标检测与识别的有用工具。
+轮廓检测:通过边缘检测，在图像中找到轮廓(基于cv2.find。等高线可以简单地解释为连接所有连续点(沿着边界)的曲线，具有相同的颜色或强度。轮廓是形状分析和目标检测与识别的有用工具。
 
-圆和四边形识别:该功能然后识别检测轮廓中的圆和四边形。这是通过将每个轮廓近似为多边形并检查多边形的顶点数量来完成的。设定如果一个多边形有超过6个顶点，它被认为是一个圆。如果一个多边形有4个顶点，它被认为是一个四边形。
+圆和四边形识别:该功能然后识别检测轮廓中的圆和四边形。这是通过将每个轮廓近似为多边形并检查多边形的顶点数量来完成的。设定如果一个多边形有超过6个顶点，它初步被认为是一个圆。如果一个多边形有4个顶点，它初步被认为是一个四边形。然后的所有圆进行质心计算，再根据最大凸边形算法(ConvexHull())求出4个黑色锚点的坐标值.
 
-透视校正:最后，该函数应用透视变换来校正图像。这是通过定义一组变换的目标点，并根据图像中圆形的位置或最大四边形的顶点计算透视变换矩阵来完成的。然后，该函数使用计算矩阵对图像应用透视变换。
+透视校正:最后，该函数应用透视变换(cv2.warpPerspective())来校正图像。通过定义一组变换的目标点(（490，10），（490，490），（10，490），（10，10）），并根据图像中锚点的位置或最大四边形的顶点计算透视变换矩阵（少数图片无法完全识别4个锚点，需要通过颜色模块边缘进行透视转换见图[Fig. 3.]）来完成的。然后，该函数使用计算矩阵对图像应用透视变换。
 
 此函数的输出是输入图像的更正版本，为图像处理管道中的下一步做好准备。
