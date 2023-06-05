@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Peter组会.md",
+                "file": "Image Processing.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Peter组会.md",
+                "file": "Image Processing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Peter组会.md",
+                "file": "Image Processing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Peter组会.md"
+                "file": "Image Processing.md"
               }
             }
           },
@@ -202,12 +202,12 @@
   },
   "active": "020d071689ed03c3",
   "lastOpenFiles": [
+    "Peter组会.md",
     "Pasted image 20230522192619.png",
     "noise_1.png",
     "AI生图竞品.md",
     "Algorithm/FFT.md",
     "AIGC Survey.md",
-    "Peter组会.md",
     "README.md",
     "Image Processing.md",
     "conflict-files-obsidian-git.md",
