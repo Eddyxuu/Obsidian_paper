@@ -40,3 +40,14 @@ Great! You've shared your Python code that uses OpenCV for image processing to s
     
 
 In your report, you can explain each function in detail, including the image processing techniques used (bilateral filtering, Canny edge detection, contour finding, perspective transform, saturation enhancement) and the logic behind the color detection rules. You can also discuss the performance of your program in terms of the accuracy of the color matches and the time taken to process an image. Include screenshots of the processed images and the output color pattern to illustrate your explanations. Finally, discuss any challenges you faced, any improvements you could make, and any techniques you learned about but didn't have time to implement.
+
+
+## **Introduction**
+
+The purpose of this project was to develop a function capable of interpreting color patterns from images. This task was inspired by the game "Life of George" by Lego, where players are required to construct a shape from Lego blocks based on an image that is displayed and then blanked out. The player's constructed shape is then photographed and compared to the original image. This project aims to automate the process of interpreting the color pattern from the original image.
+
+The function developed in this project, named `colourMatrix(filename)`, takes an image file as input and returns a 4x4 array representing the color pattern in the image. The colors identified in the images are red, green, yellow, blue, and white. The function is designed to handle images of varying complexity and does not assume a specific orientation for the images.
+
+The development of this function involved several image processing techniques, including noise reduction, edge detection, contour finding, and color identification. The performance of the function was evaluated based on the accuracy of the color matches and the time taken to process an image.
+
+This report will detail the approach taken to develop the `colourMatrix(filename)` function, explain how it works, discuss the design decisions made during its development, and assess its performance. The report will also suggest potential improvements for the function and discuss any techniques that were learned about but not implemented due to time constraints.
