@@ -59,9 +59,11 @@
             "id": "09c8c6c4377c3cfe",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.5"
+                "file": "Image Processing.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -124,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "aac5a59dc0097627",
@@ -213,17 +214,17 @@
   },
   "active": "09c8c6c4377c3cfe",
   "lastOpenFiles": [
+    "ITELS.md",
+    "NLP-22 样卷.md",
+    "noise_1.png",
+    "Pasted image 20230522192619.png",
     "AI生图竞品.md",
     "Peter组会.md",
     "Image Processing.md",
-    "Pasted image 20230522192619.png",
-    "noise_1.png",
     "Algorithm/FFT.md",
     "AIGC Survey.md",
     "README.md",
     "conflict-files-obsidian-git.md",
-    "NLP-22 样卷.md",
-    "ITELS.md",
     "AI生图竞品",
     "Algorithm",
     "wfwfw.md",
