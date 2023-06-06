@@ -54,9 +54,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "09c8c6c4377c3cfe",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -201,7 +211,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "020d071689ed03c3",
+  "active": "09c8c6c4377c3cfe",
   "lastOpenFiles": [
     "AI生图竞品.md",
     "Peter组会.md",
