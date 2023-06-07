@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Image Processing.md",
+                "file": "Sussex/ML-report.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Image Processing.md",
+                "file": "Sussex/ML-report.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Image Processing.md",
+                "file": "Sussex/ML-report.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Image Processing.md"
+                "file": "Sussex/ML-report.md"
               }
             }
           },
@@ -214,13 +214,15 @@
   },
   "active": "09c8c6c4377c3cfe",
   "lastOpenFiles": [
+    "Image Processing.md",
+    "Sussex/ML-report.md",
+    "Sussex",
     "ITELS.md",
     "NLP-22 样卷.md",
     "noise_1.png",
     "Pasted image 20230522192619.png",
     "AI生图竞品.md",
     "Peter组会.md",
-    "Image Processing.md",
     "Algorithm/FFT.md",
     "AIGC Survey.md",
     "README.md",
