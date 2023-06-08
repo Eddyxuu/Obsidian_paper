@@ -126,7 +126,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "aac5a59dc0097627",
@@ -212,7 +213,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "09c8c6c4377c3cfe",
+  "active": "94178309a589590c",
   "lastOpenFiles": [
     "Image Processing.md",
     "Sussex/ML-report.md",
