@@ -8,65 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b35b05e93058ec74",
+            "id": "be5d5b2bc4629960",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/FFT.md",
+                "file": "IST.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "b9ca3eabebff8a90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI生图竞品.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "02b88b41396fd854",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI生图竞品.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "020d071689ed03c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Image Processing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09c8c6c4377c3cfe",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20230522192619.png"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "aac5a59dc0097627",
@@ -140,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20230522192619.png",
+                "file": "IST.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20230522192619.png",
+                "file": "IST.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20230522192619.png"
+                "file": "IST.md"
               }
             }
           },
@@ -210,18 +164,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "94178309a589590c",
+  "active": "be5d5b2bc4629960",
   "lastOpenFiles": [
+    "Algorithm/FFT.md",
+    "IST.md",
+    "Image Processing.md",
+    "NLP-22 样卷.md",
+    "README.md",
     "simple.py",
     "human_ai.py",
     "Peter组会.md",
-    "README.md",
     "Sussex/ML-report.md",
-    "Algorithm/FFT.md",
-    "Image Processing.md",
     "Sussex",
     "ITELS.md",
-    "NLP-22 样卷.md",
     "noise_1.png",
     "Pasted image 20230522192619.png",
     "AI生图竞品.md",
