@@ -51,3 +51,18 @@ idTag是棋子标号，newChecker是棋子object，可以通过newChecker.getRow
 普通关卡:在普通关卡，AI的思考深度同样为1层(max_depth = 1)，但alpha和beta值分别被设置为负无穷大和正无穷大。相比简单关卡，AI的决策过程得到优化，会选择得分最高的步骤，因此难度相较于简单提高了不少。
 困难关卡：在硬关卡中，AI的思考深度是3层(max_depth = 3)， alpha和beta值分别设置为负无穷大和正无穷大。这意味着AI在决定移动之前会考虑更广泛的未来可能情况，即使对经验丰富的玩家来说，它也是一个难以对付的对手。
 用户随时可以通过游戏的菜单栏中的Difficulty选项进行三种难度的调整。这让所有技能水平的玩家都能享受游戏，并随着他们的进步逐渐增加挑战。
+
+
+在代码中我通过start_new_game()函数创建了一个名为pieces_state的2D列表来进行适当的状态表示，这种表示有效地捕获了游戏板的当前状态，允许在搜索过程中轻松操作和跟踪游戏状态。
+pieces_state列表被初始化和更新，以反映棋子在棋盘上的位置和类型。2D列表中的每个元素代表棋盘上的一个单元格，每个单元格中的值表示该位置的状态。下面是对pieces_state中的值的解释:
+0:空单元格
+1:人类玩家的常规棋子
+2:人类玩家的国王棋子(提升普通棋子)
+3: AI玩家的常规棋子
+4: AI玩家的王棋子(提升的常规棋子)
+在代码的scan()函数中，会通过扫描pieces_state来查看当前的棋局状态，支持在游戏和搜索过程中进行有效的操作和评估
+
+程序中后续函数通过评估所有可能的移动，根据评估分数选择最佳移动，并在游戏期盼上执行该移动来生成AI移动。AI的移动是通过computer_turn()函数生成的。此功能控制AI玩家的回合，并包含基于对可能的移动评估为AI选择最佳移动的逻辑。computer_turn()函数首先调用evaluate_ai_all_possible()函数来评估AI玩家的所有可能的移动。当评估完成时，该函数根据评估分数选择最佳移动。如果存在多个具有相同最高分的移动，则会从这些选项中随机选择一个移动。然后使用move()函数执行选定的移动。get_ai_all_possible()函数负责为AI玩家检索所有可能的移动。它首先通过调用check_move_ai_jump_allPiece()来尝试捕获对手的棋子，check_move_ai_jump_allPiece()检查捕获的移动。如果没有可用的捕获移动，它调用check_move_ai_normalMove_allPiece()来获取所有正常的非捕获移动。
+
+启发式还能提升
+While the current implementation relies on a basic heuristic, more advanced heuristics could be incorporated to consider factors such as piece mobility, king positions, and board control. These additional heuristics can enhance the AI's decision-making process and lead to more strategic gameplay.
