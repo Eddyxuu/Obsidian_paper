@@ -66,6 +66,9 @@ pieces_state列表被初始化和更新，以反映棋子在棋盘上的位置�
 
 启发式还能提升
 While the current implementation relies on a basic heuristic, more advanced heuristics could be incorporated to consider factors such as piece mobility, king positions, and board control. These additional heuristics can enhance the AI's decision-making process and lead to more strategic gameplay.
+当前启发式的能力不足
+高级的启发式可以被纳入考虑诸如棋子移动、国王位置和棋盘控制等因素。但是我在编写启发式的逻辑的过程中出现了问题，导致当前只有最基础的启发式能力
+
 
 代码限定了游戏规则，因此不会玩家不会出现违反规则的无效移动。只有一种可能即玩家没有注意到棋盘上有可以跳吃的棋子而想选择其他棋子的情况，代码专门为这种情况设计了人性化弹窗提示如Figure 2所示。
 
@@ -76,3 +79,10 @@ The code implements Regicide in the move() function when determining that the ju
 
 The code does include a built-in help facility that provides hints about available moves.
 The code calls the update_highlight_avaliableTile() function via the position_2() function to highlight the possible progressions of the selected piece, as shown in Figure 3
+
+
+代码使用了Tkinter模块进行GUI展示，其中使用了canvas.create_oval生成棋子，canvas.create_rectangle生成期盼
+
+
+代码通过move()函数来控制棋子移动，在move()中有draw()进行GUI同步更新，使棋子在完成每一步操作之后都可以同步更新在GUI上。
+
