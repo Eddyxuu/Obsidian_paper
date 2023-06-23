@@ -66,3 +66,13 @@ pieces_state列表被初始化和更新，以反映棋子在棋盘上的位置�
 
 启发式还能提升
 While the current implementation relies on a basic heuristic, more advanced heuristics could be incorporated to consider factors such as piece mobility, king positions, and board control. These additional heuristics can enhance the AI's decision-making process and lead to more strategic gameplay.
+
+代码限定了游戏规则，因此不会玩家不会出现违反规则的无效移动。只有一种可能即玩家没有注意到棋盘上有可以跳吃的棋子而想选择其他棋子的情况，代码专门为这种情况设计了人性化弹窗提示如Figure 2所示。
+
+
+Regicide: if a normal piece manages to capture a king, it is instantly crowned king
+The code implements Regicide in the move() function when determining that the jumped piece is the opponent's king. Change the properties of the current piece by pieces_state to make it king
+
+
+The code does include a built-in help facility that provides hints about available moves.
+The code calls the update_highlight_avaliableTile() function via the position_2() function to highlight the possible progressions of the selected piece, as shown in Figure 3
